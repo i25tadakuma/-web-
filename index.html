@@ -1,0 +1,112 @@
+<style>
+
+    .subscribe-button {
+        background-color: rgb(16, 220, 64);
+        color: yellow;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: progress;
+        margin-right: 8px;
+    }
+
+    .subscribe-button:hover{
+        animation: 1s linear 0.1s infinite alternate button-legend;
+    }
+
+    .subscribe-button:active{
+        animation: 1s linear 0.1s infinite alternate button-god;
+    }
+
+    @keyframes button-legend{
+        0%{
+            background-color: aqua;
+            color: blueviolet;
+            transform: rotateY(0deg);
+        }
+        100%{
+            background-color: blueviolet;
+            color: aqua;
+            transform: rotateY(360deg);
+        }
+    }
+
+    .join-button {
+        background-color: white;
+        border-color: rgb(9, 58, 215);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(9, 58, 215);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: wait;
+        margin-right: 8px;
+        animation: 1s linear 0.1s infinite alternate button-god;
+    }
+
+    @keyframes button-god{
+        0%{
+            background-color: red;
+            color: black;
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        100%{
+            background-color: yellow;
+            color: pink;
+            transform: rotateX(720deg) rotate(720deg);
+        }
+    }
+
+    .share-button {
+        background-color: rgb(29, 155, 240);
+        border: none;
+        color: white;
+        height: 36px;
+        width: 74px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-right: 8px;
+        font-weight: bold;
+        font-size: 15px;
+        animation: 1s linear 0.1s infinite alternate button-human;
+    }
+
+    .share-button:hover{
+        animation: 1s linear 0.1s infinite alternate button-legend;
+    }
+
+    @keyframes button-human{
+        0%{
+            background-color: red;
+            color: black;
+            transform: translateX(0) rotate(0deg);
+        }
+        30%{
+            background-color: yellow;
+            color: pink;
+            transform: translateX(300px) rotate(108deg);
+        }
+        50%{
+            background-color: pink;
+            color: magenta;
+            transform: translateY(60px) rotate(180deg);
+        }
+        70%{
+            background-color: yellow;
+            color: rgb(50, 24, 114);
+            transform: translateY(600px) rotate(252deg);
+        }
+        100%{
+            background-color: black;
+            color: pink;
+            transform: translateX(400px) rotate(360deg);
+        }
+    }
+
+</style>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+<button class="share-button">SHARE</button>
